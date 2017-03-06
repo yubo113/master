@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>面试实例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bower/swiper.min.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tipe1">面试loading...</div>
+            <div class="swiper-slide tipe2">这是面试开始了</div>
+            <div class="swiper-slide tipe3">
+                <div>
+                    <span>面试还在进行中</span>
+                </div>
+                <div id="enterIndex">
+                    <a href="introduce.html">
+                        进入首页
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="bower/swiper.min.js"></script>
+<script>
+    window.onload = function() {
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000
+        })
+    }
+    new Vue({
+        el: '#enterIndex',
+        methods: {
+          enterindex: function () {
+           
+          }
+        }
+    })
+</script>
+</html
